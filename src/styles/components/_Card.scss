@@ -1,0 +1,29 @@
+.card {
+  position: relative;
+  min-height: 180px;
+  margin-bottom: $spacing-medium;
+  padding: $spacing-small;
+  border-radius: $border-radius;
+  background-color: $primary-2;
+  & p {
+    font-size: .8rem;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: $spacing-small;
+  }
+  &__header img {
+    width: 50px;
+    border-radius: $border-radius / 4;
+    margin-right: $spacing-small / 2;
+  }
+  &__social {
+    position: absolute;
+    bottom: $spacing-small;
+    right: 0;
+    left: $spacing-small;
+    display: flex;
+    justify-content: space-between;
+  }
+}

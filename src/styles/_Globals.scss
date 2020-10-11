@@ -2,7 +2,7 @@
 $primary-1: #282C39; //rgb(40,44,57)
 $primary-2: #1B1D24; //rgb(27,29,36)
 $secondary: #FF8901; //rgb(255,137,1)
-
+$facebook: #4267B2; // rgb(66,103,178)
 $grayscale-1: #fff; //rgb(255,255,255)
 $grayscale-2: #E3E3E4; //rgb(227,227,228)
 $grayscale-3: #9C9DA0; //rgb(156,157,160)
@@ -17,28 +17,32 @@ $spacing-extra-large: 50px;
 // Border
 $border-radius: 15px;
 
+// Shadow
+@mixin shadow($color) {
+  box-shadow: 0 0 4px $color;
+}
+
+// global styles
 * {
   margin: 0;
   box-sizing: border-box;
   color: $grayscale-2;
 }
 
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
 #app {
   height: 100vh;
-  display: grid;
-  grid-template: 1fr / 1fr;
   background-color: $primary-1;
 }
 
 
 // Containers
 .wrapper {
-  border: 1px solid red;
   width: 100%;
-}
-
-.row {
-  margin: $spacing-medium 0;
-  border: 1px solid green;
   padding: $spacing-medium;
 }

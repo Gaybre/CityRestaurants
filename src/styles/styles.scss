@@ -1,7 +1,11 @@
+// variables, mixins and global styles
 @import './Globals.scss';
 
 // Components
-@import './Input';
+@import './components/Input';
+@import './components/Card';
+@import './components/Button';
+@import './components/Feed';
 
 // Pages
 @import './pages/Maps';

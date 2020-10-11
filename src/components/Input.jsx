@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Search from '../assets/icons/search.png'
 
 const Input = ({placeholder}) => {

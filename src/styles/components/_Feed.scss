@@ -1,0 +1,11 @@
+.feed {
+  // height: 100% - $spacing-medium;
+  &__items {
+    max-height: 500px;
+    margin-top: $spacing-medium;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+  }
+  }
+}

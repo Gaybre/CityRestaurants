@@ -1,0 +1,29 @@
+%btn {
+  border: none;
+  border-radius: $border-radius / 4;
+  margin-right: $spacing-small;
+  transition: 200ms;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    transform: scale(.9);
+  }
+}
+
+.btn__normal {
+  @extend %btn;
+  background: $secondary;
+  &:hover {
+    @include shadow($secondary);
+  }
+}
+
+.btn__facebook {
+  @extend %btn;
+  background: $facebook;
+  &:hover {
+    @include shadow($facebook);
+  }
+}

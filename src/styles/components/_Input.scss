@@ -14,8 +14,11 @@
     color: $grayscale-2;
     background-color: transparent;
     outline: none;
+    &::placeholder {
+      color: $grayscale-3;
+    }
   }
-  ::placeholder {
-    color: $grayscale-3
+  &:focus-within {
+    @include shadow($grayscale-1);
   }
 }
