@@ -1,14 +1,18 @@
-import React from '0react'
+import React from 'react'
+import Input from './Input'
+
+// import ImgDemo from '../assets/demo.png'
 
 const Items = () => {
   return(
     <div>
-      <div>
-        <img src="" alt="" />
+      <Input />
+      {/* <div>
+        <img src={ImgDemo} alt="restaurante-demo" />
       </div>
       <div>
         <p>name</p>
-      </div>
+      </div> */}
     </div>
   )
 }

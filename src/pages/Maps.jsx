@@ -1,14 +1,17 @@
 import React from 'react'
+
 import Map from '../components/Map'
+import Items from '../components/Items'
+
 import { API_KEY } from '../components/credentials'
-console.log( 'API_KEY', API_KEY)
+
 
 const Maps = () => {
   return (
     <div className="wrapper">
       <div className="row map">
         <section className="map__items">
-          items
+          <Items />
         </section>
         <section>
           <Map

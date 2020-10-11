@@ -1,0 +1,21 @@
+.input {
+  display: flex;
+  align-items: center;
+  padding: $spacing-small / 2;
+  border: 1px solid $grayscale-2;
+  border-radius: $border-radius;
+  & img {
+    height: 15px;
+    margin-right: $spacing-small / 2;
+  }
+  & input {
+    width: 100%;
+    border: none ;
+    color: $grayscale-2;
+    background-color: transparent;
+    outline: none;
+  }
+  ::placeholder {
+    color: $grayscale-3
+  }
+}
