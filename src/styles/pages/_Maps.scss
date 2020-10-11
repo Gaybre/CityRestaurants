@@ -1,0 +1,13 @@
+.map {
+  display: grid;
+  grid-gap: $spacing-medium;
+  grid-template: 1fr / 300px 1fr;
+  &__items {
+    padding: 0 $spacing-small;
+    border: 2px solid yellow;
+  }
+  &__section {
+    height: 500px;
+    border-radius: $border-radius;
+  }
+}
