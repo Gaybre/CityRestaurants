@@ -3,6 +3,8 @@
   border-radius: $border-radius / 4;
   margin-right: $spacing-small;
   padding: $spacing-small / 4 $spacing-small;
+  color: $primary-1;
+  font-weight: 600;
   transition: 200ms;
   outline: none;
   &:hover {
@@ -21,10 +23,28 @@
   }
 }
 
+.btn__outline {
+  @extend %btn;
+  background: transparent;
+  border: 2px solid $secondary;
+  color: $secondary;
+  &:hover {
+    @include shadow($secondary);
+  }
+}
+
 .btn__facebook {
   @extend %btn;
   background: $facebook;
   &:hover {
     @include shadow($facebook);
+  }
+}
+
+.btn_disable {
+  @extend %btn;
+  background: $grayscale-3;
+  &:hover {
+    cursor: none;
   }
 }

@@ -6,4 +6,12 @@
     height: 500px;
     border-radius: $border-radius;
   }
+  & .windowMap {
+    & h3 {
+      color: $primary-1;
+    }
+    & p {
+      color: $primary-2;
+    }
+  }
 }

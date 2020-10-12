@@ -1,16 +1,51 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   GoogleMap,
   withScriptjs,
-  withGoogleMap
+  withGoogleMap,
+  Marker,
+  InfoWindow
 } from 'react-google-maps'
 
-const Map = () => {
+const Map = (props) => {
+  const [isActive, setIsActive] = useState(undefined)
+
   return (
     <GoogleMap
-      defaultZoom={18}
-      defaultCenter={{ lat: 18.899481, lng: -98.972997 }}
-    />
+      defaultZoom={15}
+      defaultCenter={{ lat: 19.437755, lng: -99.129552 }}
+    >
+      <>
+        {props.dataMarkers.map(place => (
+          <Marker
+            key={place.position.lat}
+            position={{
+              lat: place.position.lat,
+              lng: place.position.lng
+            }}
+            onClick={() => {
+              setIsActive(place)
+            }}
+          />
+        ))}
+        {isActive && (
+          <InfoWindow
+            position={{
+              lat: isActive.position.lat,
+              lng: isActive.position.lng
+            }}
+            onCloseClick={() => setIsActive(undefined)}
+          >
+          <div className="windowMap">
+            <h3>{isActive.name}</h3>
+            <hr />
+            <p>lat: {isActive.position.lat}</p>
+            <p>lng: {isActive.position.lng}</p>
+          </div>
+          </InfoWindow>
+        )}
+      </>
+    </GoogleMap>
   )
 }
 

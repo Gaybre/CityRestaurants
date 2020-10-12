@@ -45,8 +45,14 @@ const Card = ({item, handleSave}) => {
         <Button
           onClick={() => handleSave(item)}
           title='Guardar'
+          typeStyle='outline'
+        />
+        <Button
+          onClick={() => alert('al batimapa')}
+          title='ir al mapa'
           typeStyle='normal'
         />
+        {/* facebook buttons
         <div>
           <Button
             title='Like'
@@ -56,7 +62,7 @@ const Card = ({item, handleSave}) => {
             title='Compartir'
             typeStyle='facebook'
           />
-        </div>
+        </div> */}
       </div>
     </div>
   )
