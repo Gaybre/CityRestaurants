@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ba1832c3b43fd7189b5539948f17f61a",
+    "revision": "9869c180a2cf05d06255a05f4e9ea08b",
     "url": "/CityRestaurants/index.html"
   },
   {
-    "revision": "cdbf3e288884969317a8",
-    "url": "/CityRestaurants/static/css/main.5eb8ef16.chunk.css"
+    "revision": "0abbc763d68c3295e600",
+    "url": "/CityRestaurants/static/css/main.34a78aef.chunk.css"
   },
   {
     "revision": "88ffbb507e745c934597",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CityRestaurants/static/js/2.ac436d8d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cdbf3e288884969317a8",
-    "url": "/CityRestaurants/static/js/main.30f3c9fb.chunk.js"
+    "revision": "0abbc763d68c3295e600",
+    "url": "/CityRestaurants/static/js/main.7731ef51.chunk.js"
   },
   {
     "revision": "e69e5bdc699b2d195465",
