@@ -25,14 +25,16 @@ const Maps = (props) => {
   return (
     <div className="wrapper">
       <div className="map">
-        <Feed />
-          <Map
-            googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&key=${API_KEY}`}
-            containerElement={<div className="map__area-map" />}
-            mapElement={<div className="map__area-map" />}
-            dataMarkers= {locations}
-            loadingElement={<Loader />}
-          />
+        <div className="map__feed">
+          <Feed />
+        </div>
+        <Map
+          googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&key=${API_KEY}`}
+          containerElement={<div className="map__area-map" />}
+          mapElement={<div className="map__area-map" />}
+          dataMarkers= {locations}
+          loadingElement={<Loader />}
+        />
         {getLocations()}
       </div>
     </div>

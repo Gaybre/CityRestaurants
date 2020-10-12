@@ -9,3 +9,17 @@
   }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .feed {
+    height: 150px;
+    &__area-map {
+      height: 200px;
+    }
+    &__feed {
+      grid-row: 2;
+      height: 150px;
+      margin: 0 auto;
+    }
+  }
+}

@@ -50,7 +50,9 @@ const Feed = (props) => {
 
   return(
     <div className="feed">
-      <FilterButtons />
+      <div className="feed__buttons">
+        <FilterButtons />
+      </div>
       {/* <Input /> */}
       <div className="feed__items">
         {renderCollection()}

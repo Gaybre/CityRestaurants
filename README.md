@@ -20,7 +20,6 @@ since the time was not longer to design mockups, these are some links that was u
 ## Technologies
 
 * React
-* React-helmet
 * React-google-maps
 * Redux
 * Sass

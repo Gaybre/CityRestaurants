@@ -4,6 +4,7 @@
   grid-template: 1fr / 300px 1fr;
   &__area-map {
     height: 500px;
+    min-width: 480px;
     border-radius: $border-radius;
   }
   & .windowMap {
@@ -12,6 +13,24 @@
     }
     & p {
       color: $primary-2;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .map {
+    grid-gap: $spacing-medium;
+    grid-template: 200px 1fr / 1fr;
+    direction: reverse;
+    height: 100vh;
+    &__area-map {
+      height: 200px;
+    }
+    &__feed {
+      grid-row: 2;
+      width: 60%;
+      height: 50%;
+      margin: 0 auto;
     }
   }
 }
