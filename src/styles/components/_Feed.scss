@@ -1,7 +1,7 @@
 .feed {
   // height: 100% - $spacing-medium;
   &__items {
-    max-height: 500px;
+    max-height: 450px;
     margin-top: $spacing-medium;
     overflow: auto;
     &::-webkit-scrollbar {

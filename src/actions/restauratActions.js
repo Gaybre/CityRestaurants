@@ -30,10 +30,13 @@ export const getCollection = () => async (dispatch) => {
   }
 }
 
-export const saveItem = (item) => (dispatch) => {
-  console.log(item)
-  dispatch({
-    type: 'saveItem',
-    payload: item
-  });
+export const saveItem = (item) => (dispatch, getState) => {
+  const {saved} = getState().restaurantReducer
+  if (!saved.includes(item)) {
+    dispatch({
+      type: 'saveItem',
+      payload: item
+    });
+  }
+  return
 }

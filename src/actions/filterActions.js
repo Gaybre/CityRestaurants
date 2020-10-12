@@ -10,7 +10,7 @@ export const ratingOrder = () => (dispatch, getState) => {
     )
   })
   dispatch({
-    type: 'newOrder',
+    type: 'ratingOrder',
     payload: order
   })
 }
@@ -27,7 +27,7 @@ export const alphabeticalOrder = () => (dispatch, getState) => {
     return 0;
   })
   dispatch({
-    type: 'newOrder',
+    type: 'alphabeticalOrder',
     payload: order
   })
 }

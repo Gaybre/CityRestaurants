@@ -2,6 +2,8 @@ const INITIAL_STATE = {
   collection: [],
   saved: [],
   showSaved: false,
+  rating: false,
+  alphabetical: false,
   error: undefined,
   loading: false
 }
@@ -26,17 +28,30 @@ export default (state = INITIAL_STATE, action) => {
         error: undefined,
         loading: false
       }
-    case 'newOrder':
+    case 'ratingOrder':
       return {
         ...state,
         collection: action.payload,
+        alphabetical: true,
+        rating: false,
+        showSaved: false,
+        loading: false
+      }
+    case 'alphabeticalOrder':
+      return {
+        ...state,
+        collection: action.payload,
+        rating: true,
+        alphabetical: false,
         showSaved: false,
         loading: false
       }
     case 'turnSaved':
       return {
         ...state,
-        showSaved: true
+        showSaved: true,
+        alphabetical: false,
+        rating: false,
       }
     case 'saveItem':
       return {
