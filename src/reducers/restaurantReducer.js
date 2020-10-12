@@ -1,6 +1,7 @@
 const INITIAL_STATE = {
   collection: [],
   saved: [],
+  showSaved: false,
   error: undefined,
   loading: false
 }
@@ -11,7 +12,7 @@ export default (state = INITIAL_STATE, action) => {
       return {
         ...state,
         error: action.payload,
-        // loading: false
+        loading: false
       }
     case 'LOADING':
       return {
@@ -24,6 +25,23 @@ export default (state = INITIAL_STATE, action) => {
         collection: action.payload,
         error: undefined,
         loading: false
+      }
+    case 'newOrder':
+      return {
+        ...state,
+        collection: action.payload,
+        showSaved: false,
+        loading: false
+      }
+    case 'turnSaved':
+      return {
+        ...state,
+        showSaved: true
+      }
+    case 'saveItem':
+      return {
+        ...state,
+        saved: [].concat(state.saved, action.payload)
       }
     default: return state
   }

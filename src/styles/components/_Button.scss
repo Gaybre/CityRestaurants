@@ -2,6 +2,7 @@
   border: none;
   border-radius: $border-radius / 4;
   margin-right: $spacing-small;
+  padding: $spacing-small / 4 $spacing-small;
   transition: 200ms;
   outline: none;
   &:hover {

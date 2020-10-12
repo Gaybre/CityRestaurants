@@ -5,7 +5,7 @@ import Button from './Button'
 import Icon from './Icon'
 import RatingStars from './RatingStars'
 
-const Card = ({item}) => {
+const Card = ({item, handleSave}) => {
   const {
     id,
     name,
@@ -43,6 +43,7 @@ const Card = ({item}) => {
       </div>
       <div className="card__social">
         <Button
+          onClick={() => handleSave(item)}
           title='Guardar'
           typeStyle='normal'
         />

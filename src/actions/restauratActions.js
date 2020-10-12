@@ -29,3 +29,11 @@ export const getCollection = () => async (dispatch) => {
     })
   }
 }
+
+export const saveItem = (item) => (dispatch) => {
+  console.log(item)
+  dispatch({
+    type: 'saveItem',
+    payload: item
+  });
+}
