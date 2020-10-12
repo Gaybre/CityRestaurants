@@ -1,22 +1,37 @@
 .card {
   position: relative;
-  min-height: 180px;
+  min-height: 195px;
   margin-bottom: $spacing-medium;
   padding: $spacing-small;
   border-radius: $border-radius;
   background-color: $primary-2;
   & p {
     font-size: .8rem;
+    line-height: 1.1rem;
   }
   &__header {
     display: flex;
     align-items: center;
-    margin-bottom: $spacing-small;
+    margin-bottom: $spacing-small / 2;
+    & img {
+      width: 50px;
+      border-radius: $border-radius / 4;
+      margin-right: $spacing-small;
+    }
+    & a {
+      color: $secondary;
+      font-size: .7rem;
+      &:hover {
+        color: $facebook;
+      }
+    }
   }
-  &__header img {
-    width: 50px;
-    border-radius: $border-radius / 4;
-    margin-right: $spacing-small / 2;
+  &__details {
+    letter-spacing: .05rem;
+    & p:nth-child(2) {
+      margin-left: 15px;
+      margin-bottom: $spacing-small / 3;
+    }
   }
   &__social {
     position: absolute;

@@ -1,7 +1,11 @@
 // variables, mixins and global styles
 @import './Globals.scss';
 
+// icons-font
+@import '../assets/fonts/style.css';
+
 // Components
+@import './components/Loader';
 @import './components/Input';
 @import './components/Card';
 @import './components/Button';

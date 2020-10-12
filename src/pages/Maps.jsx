@@ -1,5 +1,4 @@
 import React from 'react'
-import { API_KEY } from '../components/credentials'
 
 import Map from '../components/Map'
 import Feed from '../components/Feed'
@@ -10,7 +9,7 @@ const Maps = () => {
       <div className="map">
         <Feed />
         <Map
-          googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&key=${API_KEY}`}
+          googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&key=${API_GOOGLEMAPS_KEY}`}
           containerElement={<div className="map__area-map" />}
           mapElement={<div className="map__area-map" />}
           loadingElement={<p>Cargando</p>}

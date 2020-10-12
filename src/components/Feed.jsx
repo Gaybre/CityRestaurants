@@ -2,33 +2,35 @@ import React from 'react'
 import { connect } from 'react-redux'
 import * as restauratActions from '../actions/restauratActions'
 
+import Loader from './Loader'
 import Input from './Input'
 import Card from './Card'
 
 const Feed = (props) => {
-  const getCollection = () => {
-    !props.collection.length && props.getCollection()
+  const renderCollection = () => {
+    if (!props.collection.length) {
+      props.getCollection()
+    }
+    return <>
+      {props.collection.map(item => (
+        <Card
+          key={`${item.id}-${item.contact.phone}`}
+          item={item}
+        />
+      ))}
+    </>
+  }
+
+  if (props.loading) {
+    return <Loader />
   }
 
   return(
     console.log('render',props),
     <div className="feed">
-      {getCollection()}
       <Input />
       <div className="feed__items">
-        {props.collection.length
-          ? (
-            <>
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-            </>
-          )
-          : null
-        }
+        {renderCollection()}
       </div>
     </div>
   )

@@ -23,6 +23,9 @@ $border-radius: 15px;
 }
 
 // global styles
+:root {
+  --secondary: $secondary;
+}
 * {
   margin: 0;
   box-sizing: border-box;
