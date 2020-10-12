@@ -26,7 +26,6 @@ const Feed = (props) => {
   }
 
   return(
-    console.log('render',props),
     <div className="feed">
       <Input />
       <div className="feed__items">
