@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/CityRestaurants/static/css/main.5eb8ef16.chunk.css",
+    "main.js": "/CityRestaurants/static/js/main.30f3c9fb.chunk.js",
+    "main.js.map": "/CityRestaurants/static/js/main.30f3c9fb.chunk.js.map",
+    "runtime-main.js": "/CityRestaurants/static/js/runtime-main.28015606.js",
+    "runtime-main.js.map": "/CityRestaurants/static/js/runtime-main.28015606.js.map",
+    "static/js/2.ac436d8d.chunk.js": "/CityRestaurants/static/js/2.ac436d8d.chunk.js",
+    "static/js/2.ac436d8d.chunk.js.map": "/CityRestaurants/static/js/2.ac436d8d.chunk.js.map",
+    "index.html": "/CityRestaurants/index.html",
+    "precache-manifest.1fc97b1d85abbc1ece70ea37378a4c05.js": "/CityRestaurants/precache-manifest.1fc97b1d85abbc1ece70ea37378a4c05.js",
+    "service-worker.js": "/CityRestaurants/service-worker.js",
+    "static/css/main.5eb8ef16.chunk.css.map": "/CityRestaurants/static/css/main.5eb8ef16.chunk.css.map",
+    "static/js/2.ac436d8d.chunk.js.LICENSE.txt": "/CityRestaurants/static/js/2.ac436d8d.chunk.js.LICENSE.txt",
+    "static/media/demo.jpg": "/CityRestaurants/static/media/demo.a002cf26.jpg",
+    "static/media/styles.scss": "/CityRestaurants/static/media/icomoon.b9fef874.eot"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.28015606.js",
+    "static/js/2.ac436d8d.chunk.js",
+    "static/css/main.5eb8ef16.chunk.css",
+    "static/js/main.30f3c9fb.chunk.js"
+  ]
+}
